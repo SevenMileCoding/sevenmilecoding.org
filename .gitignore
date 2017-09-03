@@ -1,3 +1,5 @@
 tmp/*
 .pyc
 .vscode/*
+*.pub
+*.ppk
