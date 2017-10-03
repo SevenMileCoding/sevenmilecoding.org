@@ -1,4 +1,9 @@
-from jinja2 import FileSystemLoader, Environment
+try:
+	from jinja2 import FileSystemLoader, Environment
+except ModuleNotFoundError as e:
+	print(e)
+	print('Make sure to run: pip install -r module-reqs.txt')
+
 import os
 
 CUR_PATH = os.path.realpath(__file__)
@@ -6,7 +11,8 @@ CUR_DIR = os.path.dirname(CUR_PATH)
 TEMPLATES_DIR = os.path.join(CUR_DIR, 'templates')
 EXCLUDE_TEMPS = ['base.html']
 SITE_GLOBALS = {
-	'email': 'umsevenmilecoding@gmail.com'
+	'email': 'umsevenmilecoding@gmail.com',
+	'github': 'https://github.com/SevenMileCoding'
 }
 
 def render_from_template(directory, template_name, **kwargs):
