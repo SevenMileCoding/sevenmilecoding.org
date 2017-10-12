@@ -2,52 +2,121 @@
 {% extends "base.html" %}
 {% block title %}Members - Seven Mile Coding{% endblock %}
 {% block content %}
+{% set board =
+	[
+		{ 
+			'name': 'Maverick Cook',
+			'position': '7MC Chair',
+			'img': 'images/mav.jpg',
+			'class': 'Senior in Computer Science BSE',
+			'genI': 'Animation, movies, digital art, guitar, technology, photography',
+			'csI': 'User interfaces, tools, web apps',
+			'ask': 'Batman, making popsicle stick sculptures, movies'
+		},
+		{ 
+			'name': 'Ritam Mehta',
+			'position': 'Curriculum Director',
+			'img': 'images/ritam.jpg',
+			'class': 'Senior in Computer Science BS',
+			'genI': 'Comedy, News & Politics, Hip Hop, Space Jam, Reading',
+			'csI': 'Intersection with the media, Frontend programming, CS as Journalism',
+			'ask': 'Being Funny, faking it till you make it, coding fun projects, NYC'
+		},
+		{ 
+			'name': 'Tara Safavi',
+			'position': 'Teaching Director',
+			'img': 'images/tara.jpg',
+			'class': 'First year PhD in Computer Science',
+			'genI': 'Discovering new music, outdoor activities like hiking and camping, politics/world news',
+			'csI': '',
+			'ask': ''
+		}
+	]
+%}
+{% set members =
+	[
+		{ 
+			'name': 'Jule Schatz (Pronounced like you-la shots)',
+			'position': 'Teacher',
+			'img': 'images/jule.jpg',
+			'class': 'Senior in Computer Science BSE',
+			'genI': 'drawing, playing volleyball, running, teaching',
+			'csI': 'making programs think like humans, making programs that play games',
+			'ask': 'people always mispronouncing my name, being super tall, and programming a sudoku solver'
+		},
+		{ 
+			'name': 'Shreedhar Deshpande',
+			'position': 'Teacher',
+			'img': 'images/shree.jpg',
+			'class': 'Junior in Computer Science BSE',
+			'genI': 'Huge sports fan, drummer, hip hop fan, food lover',
+			'csI': 'Backend programming, databases, data structures',
+			'ask': 'Isaiah Thomas, Kanye West, coding without any experience, Boston'
+		},
+		{ 
+			'name': 'Jonathan Hamermesh',
+			'position': 'Teacher',
+			'img': 'images/jonathan.jpg',
+			'class': 'Junior in Computer Engineering BSE',
+			'genI': '',
+			'csI': '',
+			'ask': 'Playing a string instrument, listening to classical music and Broadway shows, or the keyboard that I built (and use) and other ways to interact between the physical world and computers.'
+		} 
+
+	]
+%}
+
+{% macro genMembers(people) -%}
+	{% for p in people %}
+	<section>
+		<a class="image" data-position="center center">
+			<img src="{{ p['img'] }}"/> 
+		</a>
+		<div class="content">
+			<div class="inner">
+				<h2>{{ p['name'] }} - {{ p['position'] }}</h2>
+				<p><b>Class:</b> {{ p['class'] }}</p>
+				<p><b>Interests:</b> {{ p['genI'] }}</p>
+				<!-- <p><b>CS Interests:</b> {{ p['csI'] }}</p> -->
+				<p><b>Ask me about:</b> {{ p['ask'] }}</p>
+			</div>
+		</div>
+	</section>
+	{% endfor %}
+{%- endmacro %}
+
+
 <!-- Main -->
-<section id="main" class="wrapper">
-	<div class="inner">
-		<h1 class="major">Board</h1>
-			<section>
+<section class="wrapper">
+	<div class="inner" style="padding-top: 0">
+	
+
+		<section class="wrapper style2 spotlights">
+			<div class="inner">
+				<h1>Who we are</h1>
 				<p>
 					Seven Mile Coding is made up of student volunteers who study computer science at 
 					the University of Michigan. Our mentors bring their experience and knowledge directly to the students 
 					in the Detroit community. Seven Mile Coding is a part of <a href="http://sevenmilemusic.org/" target="_blank">Seven Mile Music</a>, 
 					a nonprofit organization that works to provide accessible education to youth in Detroit.
 				</p>
-				<div class="box alt">
-					<div class="row uniform">
-						<div class="3u"><span class="image fit"><img src="images/mav.jpg" alt="" /></span>
-							<h3>Maverick Cook - Chair</h3>
-							<p>
-								Maverick is a senior in computer science at the University of Michigan.
-								After being introduced to coding in college, he wished he 
-								learned how to code earlier, and has been working to make
-								coding more accessible ever since.
-							</p>
-						</div>
-						<div class="1u"></div>
-						<div class="3u"><span class="image fit"><img src="images/tara.jpg" alt="" /></span>
-							<h3>Tara Safavi - Director of Teaching</h3>
-							<p>
-								Tara is a PhD student in computer science at the University of Michigan.
-								During her time at college, Tara has dedicated time to teaching and mentoring fellow students 
-								in multiple computer science classes.
-							</p>
-						</div>
-						<div class="1u"></div>
-						<div class="3u"><span class="image fit"><img src="images/ritam.jpg" alt="" /></span>
-							<h3>Ritam Mehta - Director of Curriculum</h3>
-							<p>
-								A senior in computer science at the University of Michigan, Ritam has
-								spent his summers developing computer science curriculum for the City
-								of New York. 
-							</p>
-						</div>
-					</div>
-				</div>
-				<h3>Contact us</h3>
-				<a href="mailto:{{email}}">{{email}}</a>
-			</section>
+			</div>
+		</section>
+		
 
-	</div>
+		<section class="wrapper style2 spotlights">
+			<div class="inner"><h1 class="center">Board</h1></div>
+			{{ genMembers(board) }}
+			<div class="inner"><h1 class="center">Members</h1></div>
+			{{ genMembers(members) }}
+
+		</section>
+		<br/><br/>
+		<h3>Contact us</h3>
+		<a href="mailto:{{email}}">{{email}}</a>
+</div>
 </section>
+<style>
+	.content .inner p { margin-bottom: .75em; }
+</style>
 {% endblock %}
