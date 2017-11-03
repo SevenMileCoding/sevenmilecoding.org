@@ -1,0 +1,17 @@
+/* Overrides for members.html */
+section {
+    min-height: 15.5em !important;
+}
+
+.content{
+    padding: 2em 4em;
+}
+
+.spotlights > section > .image{ width: 15.5em;}
+
+@media screen and (max-width: 980px){
+    .spotlights > section > .image {
+        height: 30vh;
+        margin: 0 auto;
+    }
+}
