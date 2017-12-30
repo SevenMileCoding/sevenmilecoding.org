@@ -23,7 +23,7 @@ def program_route():
 
 
 
-@info.route('/members', methods=['GET', 'POST'])
+@info.route('/team', methods=['GET', 'POST'])
 def members_route():
 
 	data = {}

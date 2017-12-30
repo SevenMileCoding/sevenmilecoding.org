@@ -16,7 +16,7 @@
 <!-- about -->
 <section id="about" class="wrapper style2 spotlights">
 	<section>
-		<a href="program.html" class="image"><img src="images/dev.svg" alt="" data-position="center center" /></a>
+		<a href="{{ main_urls.program }}" class="image"><img src="{{ url_for('static', filename='images/dev.svg') }}" alt="" data-position="center center" /></a>
 		<div class="content">
 			<div class="inner">
 				<h2>What we do</h2>
@@ -33,7 +33,7 @@
 		</div>
 	</section>
 	<section>
-		<a href="members.html" class="image"><img src="images/school.svg" alt="" data-position="top center" /></a>
+		<a href="{{ main_urls.members }}" class="image"><img src="{{ url_for('static', filename='images/school.svg') }}" alt="" data-position="top center" /></a>
 		<div class="content">
 			<div class="inner">
 				<h2>Who we are</h2>
@@ -44,13 +44,13 @@
 					whose mission is founded on providing free and accessible education to youth in Detroit. 
 				</p>
 				<ul class="actions">
-					<li><a href="members.html" class="button">Learn more</a></li>
+					<li><a href="{{ main_urls.members }}" class="button">Learn more</a></li>
 				</ul>
 			</div>
 		</div>
 	</section>
 	<section>
-		<a href="support.html" class="image"><img src="images/heart.svg" alt="" data-position="25% 25%" /></a>
+		<a href="{{ main_urls.support }}" class="image"><img src="{{ url_for('static', filename='images/heart.svg') }}" alt="" data-position="25% 25%" /></a>
 		<div class="content">
 			<div class="inner">
 				<h2>Support</h2>
@@ -58,7 +58,7 @@
 					Help us introduce youth to computer science and get them started creating with code.
 				</p>
 				<ul class="actions">
-					<li><a href="support.html" class="button">Learn more</a></li>
+					<li><a href="{{ main_urls.support }}" class="button">Learn more</a></li>
 				</ul>
 			</div>
 		</div>
@@ -83,7 +83,7 @@
 
 		</div>
 		<ul class="actions">
-			<li><a href="program.html" class="button">Learn more</a></li>
+			<li><a href="{{ main_urls.program }}" class="button">Learn more</a></li>
 		</ul>
 	</div>
 </section>
