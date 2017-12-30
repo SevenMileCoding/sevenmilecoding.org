@@ -1,8 +1,8 @@
 {% set headerNav = True %}
-{% extends "base.html" %}
+{% extends "main/base.html" %}
 {% block title %}Members - Seven Mile Coding{% endblock %}
 {% block css %}
-<link rel="stylesheet" href="assets/css/members.css" />
+<link rel="stylesheet" href="{{ url_for('static', filename='css/members.css') }}" />
 {% endblock %}
 {% block content %}
 {% set board =
@@ -73,7 +73,7 @@
 	{% for p in people %}
 	<section>
 		<a class="image" data-position="center center">
-			<img src="{{ p['img'] }}"/> 
+			<img src="{{ url_for('static', filename=p['img']) }}"/> 
 		</a>
 		<div class="content">
 			<div class="inner">

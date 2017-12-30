@@ -9,28 +9,26 @@ import datetime
 info = Blueprint('info', __name__)
 
 
-@info.route('/grade', methods=['GET', 'POST'])
-def main_route():
+@info.route('/program', methods=['GET', 'POST'])
+def program_route():
 
-	gradeView = True
 	data = {}
 
 	if request.method == 'GET' and request.args:
 		args = request.args
-		imgId = args['p']
-		print('\nLoading view for', imgId, '\n')
-		data = getPageData(imgId)
 	
-	return render_template('base.html', **data)
+	return render_template('main/program.html', **data)
 
 
 
 
 
-@info.route('/getUser', methods=['GET', 'POST'])
-def get_user_route():
-	rForm = request.form
-	if request.form['caller'] == 'exportGrade':
-		user = util.get_current_user()
-		return jsonify({'user': user})
-	else: return jsonify({'user':'error'})
+@info.route('/members', methods=['GET', 'POST'])
+def members_route():
+
+	data = {}
+
+	if request.method == 'GET' and request.args:
+		args = request.args
+	
+	return render_template('main/members.html', **data)

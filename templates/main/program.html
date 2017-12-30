@@ -1,5 +1,5 @@
 {% set sidebarNav = True %}
-{% extends "base.html" %}
+{% extends "main/base.html" %}
 {% block title %}Program - Seven Mile Coding{% endblock %}
 {% block content %}
 <style>
@@ -80,7 +80,7 @@
 					a laptop loaded with resources, so they can continue to learn and make cool stuff.
 					<hr>
 					In order to meet our goal of equiping students with laptops, we need your help.
-					Please visit our <a href="support.html" target="_blank">Support page</a> if you want to help make this a reality.
+					Please visit our <a href="{{ main_urls.support }}" target="_blank">Support page</a> if you want to help make this a reality.
 				</p>
 			</section>
 			<section style="border-top:none;">
@@ -97,7 +97,7 @@
 			
 		</div>
 		<ul class="actions">
-			<li><a href="support.html" class="button">Support us</a></li>
+			<li><a href="{{ main_urls.support }}" class="button">Support us</a></li>
 		</ul>
 	</div>
 </section>
