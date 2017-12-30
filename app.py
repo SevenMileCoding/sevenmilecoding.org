@@ -25,6 +25,11 @@ app.register_blueprint(blueprints.teach.teach, subdomain='teach')
 
 app.config['SERVER_NAME'] = '7mc:' + str(config.env['port']) # so subdomains work
 
+# add global variables to jinja templates
+@app.context_processor
+def inject_globals():
+	return dict(**config.GLOBAL_JINJA)
+
 # @app.errorhandler(404)
 # def page_not_found(e):
 #     return render_template('404.html')
