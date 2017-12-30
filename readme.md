@@ -19,10 +19,12 @@ cd to the cloned directory
 pip install -r module-reqs.txt
 ```
 
+### Edit hosts
+In order for subdomains to work locally, you need to edit your /etc/hosts file and add
+```
+127.0.1.1   7mc
+127.0.1.1   learn.7mc
+127.0.1.1   teach.7mc
+```
+
 ## Making changes
-To save your changes, first run
-```
-python genHTML.py
-```
-This will create the final html files that will be hosted on the website.
-You can preview the website by opening up index.html in a web browser.
