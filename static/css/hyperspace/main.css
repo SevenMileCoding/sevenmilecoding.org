@@ -1,4 +1,4 @@
-@import url(font-awesome.min.css);
+@import url(../font-awesome.min.css);
 
 /*
 	Hyperspace by HTML5 UP
@@ -3884,7 +3884,7 @@
 
 	#intro {
 		background-attachment: fixed;
-		background-image: url("images/intro.svg");
+		background-image: url("../images/intro.svg");
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: 100% 100%;

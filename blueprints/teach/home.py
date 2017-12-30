@@ -14,4 +14,4 @@ def main_route():
 	if request.method == 'GET' and request.args:
 		args = request.args
 	
-	return render_template('base.html', **data)
+	return render_template('teach/index.html', **data)
