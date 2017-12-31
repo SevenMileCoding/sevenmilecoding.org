@@ -15,3 +15,14 @@ def main_route():
 		args = request.args
 	
 	return render_template('teach/index.html', **data)
+
+@teach.route('/cal', methods=['GET', 'POST'])
+@teach.route('/sched', methods=['GET', 'POST'])
+@teach.route('/schedule', methods=['GET', 'POST'])
+def schedule_route():
+	data = {}
+
+	if request.method == 'GET' and request.args:
+		args = request.args
+	
+	return render_template('teach/schedule.html', **data)

@@ -1,240 +1,180 @@
-<!DOCTYPE HTML>
-<!--
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Teach - Seven Mile Coding</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="{{ url_for('static', filename='js/ie/html5shiv.js') }}"></script><![endif]-->
-		<link rel="stylesheet" href="{{ url_for('static', filename='css/stellar/main.css') }}" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="{{ url_for('static', filename='css/stellar/ie9.css') }}"" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="{{ url_for('static', filename='css/stellar/ie8.css') }}"" /><![endif]-->
-	</head>
-	<body>
+{% extends "teach/base.html" %}
+{% block content %}
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<!-- Nav -->
+<nav id="nav">
+	<ul>
+		<li><a href="#intro" class="active">Become a teacher</a></li>
+		<li><a href="#reqs">Requirements</a></li>
+		<li><a href="#steps">Steps</a></li>
+		<li><a href="#join">Get Started</a></li>
+	</ul>
+</nav>
 
-				<!-- Header -->
-					<header id="header" class="alt" style="padding-top:4em;padding-bottom:2em">
-						<span class="logo"><img src="{{ url_for('static', filename='images/logo.svg') }}" alt="" /></span>
-						<h1>Teach 7MC</h1>
-						<p>Seven Mile Coding teaching resources</p>
-						
-						<ul class="actions">
-							<li>
-								<button class="button special">Lessons</button>
-							</li>
-							<li>
-								<button class="button special">Lessons</button>
-							</li>
-						</ul>
-						
+<!-- Main -->
+<div id="main">
+
+	<!-- Introduction -->
+		<section id="intro" class="main">
+			<div class="spotlight">
+				<div class="content">
+					<header class="major">
+						<h2>Become a teacher</h2>
 					</header>
-
-				<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li><a href="#intro" class="active">Become a teacher</a></li>
-							<li><a href="#reqs">Requirements</a></li>
-							<li><a href="#steps">Steps</a></li>
-							<li><a href="#join">Get Started</a></li>
-						</ul>
-					</nav>
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Introduction -->
-							<section id="intro" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>Become a teacher</h2>
-										</header>
-										<p>
-											If you are passionate about teaching computer science, and are a University of Michigan student,
-											you can join our teaching team. We are always happy to bring on highly driven and motivated teachers.
-										</p>
-									</div>
-									<span class="image"><img src="{{ url_for('static', filename='images/pic01.jpg') }}" alt="" /></span>
-								</div>
-							</section>
-
-						<!-- First Section -->
-							<section id="reqs" class="main special">
-								<header class="major">
-									<h2>Teacher Requirements</h2>
-								</header>
-								
-								<!-- i know i know, ill fix later -->
-								<style>
-									.gross { text-align: left;}
-									.gross span { margin-right: 2em !important; margin-bottom: 0 !important;}
-									.gross ul {margin-left: 2em;}
-								</style>
-
-								<div class="spotlight gross">
-									<span class="icon major style1 fa-copy"></span>
-									<div class="content">
-										<h3>Programming Knowledge</h3>
-										<p>
-											You must know the basic principles of programming. Taking U of M's EECS 183 should provide you with sufficient knowledge
-											to teach new students.
-											We focus on teaching Python 3, so if you do not know it, you will need to learn it before starting teaching. Check out our
-											Python 3 resources <a href="">here</a>.
-										</p>
-									</div>
-								</div>
-								<br/>
-
-								<div class="spotlight gross">
-									<span class="icon major style1 fa-copy"></span>
-									<div class="content">
-										<h3>Availablity</h3>
-										<p>
-											You must be available during our weekly lessons. See the teacher 
-											calendar <a href="">here</a> for specific times.
-										</p>
-										<ul>
-											<li>You are only allowed to miss two lessons. This is because of our focus on one-on-one teaching</li>
-											<li>Give us notice of absence at least one week in advance, so we can make accommodations for your student</li>
-											<li>If you miss more than 2 lessons then you will no longer be able to teach</li>
-										</ul>
-									</div>
-								</div>
-								<br/>
-								
-								<div class="spotlight gross">
-									<span class="icon major style5 fa-copy"></span>
-									<div class="content">
-										<h3>25% Time</h3>
-										<p>
-											You should expect to put in 4 or more hours per week, 3 of which are for the weekly trip.
-											Teachers must spend at least an hour outside of trips working on other 7MC work/projects.
-											This can include:
-										</p>
-										<ul>
-											<li>Developing lessons and 10 minutes of code</li>
-											<li>Working on the website</li>
-											<li>Fundraising</li>
-										</ul>
-									</div>
-								</div>
-								<br/>
-								<div class="spotlight gross">
-									<span class="icon major style3 fa-copy"></span>
-									<div class="content">
-										<h3>Develop a 10 Minutes of Code lesson</h3>
-										<p>
-											Each teacher must make a 10 Minutes of Code lesson (10moc). 
-											For our first lesson of each semester, students get to rotate between different 10mocs,
-											getting a chance to see different areas of computer science, and how easy coding can be.		
-										</p>
-									</div>
-								</div>
-										
-
-								<footer class="major">
-									<ul class="actions">
-										<li><a href="{{ url_for('info.program_route')}}" target="_blank" class="button">
-											Learn more about our style</a></li>
-									</ul>
-								</footer>
-							</section>
-
-						<!-- Second Section -->
-							<section id="steps" class="main special">
-								<header class="major">
-									<h2>Join</h2>
-									<p>Do you meet the requirements above? Complete the steps below and join the team!</p>
-								</header>
-								<ul class="statistics">
-									<li class="style1">
-										<span class="icon fa-code-fork"></span>
-										<strong>1. Contact us</strong> <a href="">Fill out the sign-up form</a>
-									</li>
-									<li class="style2">
-										<span class="icon fa-folder-open-o"></span>
-										<strong>2. 10moc</strong> Submit your proposal for a 10 Minutes of Code
-										<br/><a href="">Look at the spec here</a>
-									</li>
-									<li class="style3">
-										<span class="icon fa-signal"></span>
-										<strong>3. Interview</strong> Attend a casual interview with 1 or 2 existing members
-									</li>
-									<li class="style4">
-										<span class="icon fa-laptop"></span>
-										<strong>4. Background</strong> Pass the University of Michigan's background check
-									</li>
-									
-								</ul>
-							</section>
-
-						<!-- Get Started -->
-							<section id="join" class="main special">
-								<header class="major">
-									<h2>Let's go!</h2>
-									<p>
-										If you have any questions, feel free to email us! If you don't have the time/availabilty to be a teacher,
-										but you still want to join, you can check out
-										joining another one of our teams. Take a look <a href="">here</a>!
-									</p>
-								</header>
-								<footer class="major">
-									<ul class="actions">
-										<li><a href="" class="button special">Get Started</a></li>
-										<li><a href="" class="button">Email us</a></li>
-									</ul>
-								</footer>
-							</section>
-
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<h2>Aliquam sed mauris</h2>
-							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
-							<ul class="actions">
-								<li><a href="generic.html" class="button">Learn More</a></li>
-							</ul>
-						</section>
-						<section>
-							<h2>Etiam feugiat</h2>
-							<dl class="alt">
-								<dt>Address</dt>
-								<dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
-								<dt>Phone</dt>
-								<dd>(000) 000-0000 x 0000</dd>
-								<dt>Email</dt>
-								<dd><a href="#">information@untitled.tld</a></dd>
-							</dl>
-							<ul class="icons">
-								<li><a href="#" class="icon fa-twitter alt"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon fa-facebook alt"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon fa-instagram alt"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon fa-github alt"><span class="label">GitHub</span></a></li>
-								<li><a href="#" class="icon fa-dribbble alt"><span class="label">Dribbble</span></a></li>
-							</ul>
-						</section>
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>
-
+					<p>
+						If you are passionate about teaching computer science, and are a University of Michigan student,
+						you can join our teaching team. We are always happy to bring on highly driven and motivated teachers.
+					</p>
+				</div>
+				<span class="image"><img src="{{ url_for('static', filename='images/pic01.jpg') }}" alt="" /></span>
 			</div>
+		</section>
 
-		<!-- Scripts -->
-			<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
-			<script src="{{ url_for('static', filename='js/jquery.scrollex.min.js') }}"></script>
-			<script src="{{ url_for('static', filename='js/jquery.scrolly.min.js') }}"></script>
-			<script src="{{ url_for('static', filename='js/skel.min.js') }}"></script>
-			<script src="{{ url_for('static', filename='js/util.js') }}"></script>
-			<!--[if lte IE 8]><script src="{{ url_for('static', filename='js/ie/respond.min.js') }}"></script><![endif]-->
-			<script src="{{ url_for('static', filename='js/stellar_main.js') }}"></script>
+	<!-- First Section -->
+		<section id="reqs" class="main special">
+			<header class="major">
+				<h2>Teacher Requirements</h2>
+			</header>
+			
+			<!-- i know i know, ill fix later -->
+			<style>
+				.gross { text-align: left;}
+				.gross span { margin-right: 2em !important; margin-bottom: 0 !important;}
+				.gross ul {margin-left: 2em;}
+			</style>
 
-	</body>
-</html>
+			<div class="spotlight gross">
+				<span class="icon major style1 fa-copy"></span>
+				<div class="content">
+					<h3>Programming Knowledge</h3>
+					<p>
+						You must know the basic principles of programming. Taking U of M's EECS 183 should provide you with sufficient knowledge
+						to teach new students.
+						We focus on teaching Python 3, so if you do not know it, you will need to learn it before starting teaching. Check out our
+						Python 3 resources <a href="">here</a>.
+					</p>
+				</div>
+			</div>
+			<br/>
+
+			<div class="spotlight gross">
+				<span class="icon major style1 fa-copy"></span>
+				<div class="content">
+					<h3>Availablity</h3>
+					<p>
+						You must be available during our weekly lessons. See the teacher 
+						calendar <a href="">here</a> for specific times.
+					</p>
+					<ul>
+						<li>You are only allowed to miss two lessons. This is because of our focus on one-on-one teaching</li>
+						<li>Give us notice of absence at least one week in advance, so we can make accommodations for your student</li>
+						<li>If you miss more than 2 lessons then you will no longer be able to teach</li>
+					</ul>
+				</div>
+			</div>
+			<br/>
+			
+			<div class="spotlight gross">
+				<span class="icon major style5 fa-copy"></span>
+				<div class="content">
+					<h3>25% Time</h3>
+					<p>
+						You should expect to put in 4 or more hours per week, 3 of which are for the weekly trip.
+						Teachers must spend at least an hour outside of trips working on other 7MC work/projects.
+						This can include:
+					</p>
+					<ul>
+						<li>Developing lessons and 10 minutes of code</li>
+						<li>Working on the website</li>
+						<li>Fundraising</li>
+					</ul>
+				</div>
+			</div>
+			<br/>
+			<div class="spotlight gross">
+				<span class="icon major style3 fa-copy"></span>
+				<div class="content">
+					<h3>Develop a 10 Minutes of Code lesson</h3>
+					<p>
+						Each teacher must make a 10 Minutes of Code lesson (10moc). 
+						For our first lesson of each semester, students get to rotate between different 10mocs,
+						getting a chance to see different areas of computer science, and how easy coding can be.		
+					</p>
+				</div>
+			</div>
+			<br/>
+			<div class="spotlight gross">
+				<span class="icon major style3 fa-copy"></span>
+				<div class="content">
+					<h3>Other</h3>
+					<p>
+						Check <a href="">this link</a> for an up to date and expanded version of the requirements.		
+					</p>
+					<ul>
+						<li>Attend a monthly meeting with all Seven Mile members</li>
+						<li>Membership due of $10 (can be waived)</li>
+						<li>Like one or more of: Wonder Woman, Batman, Spiderman</li>
+					</ul>
+				</div>
+			</div>
+			<br/>
+			<footer class="major">
+				<ul class="actions">
+					<li><a href="{{ url_for('info.program_route')}}" target="_blank" class="button">
+						Learn more about our style</a></li>
+				</ul>
+			</footer>
+		</section>
+
+	<!-- Second Section -->
+		<section id="steps" class="main special">
+			<header class="major">
+				<h2>Join</h2>
+				<p>Do you meet the requirements above? Complete the steps below and join the team!</p>
+			</header>
+			<ul class="statistics">
+				<li class="style1">
+					<span class="icon fa-code-fork"></span>
+					<strong>1. Contact us</strong> <a href="">Fill out the sign-up form</a>
+				</li>
+				<li class="style2">
+					<span class="icon fa-folder-open-o"></span>
+					<strong>2. 10moc</strong> Submit your proposal for a 10 Minutes of Code
+					<br/><a href="">Look at the spec here</a>
+				</li>
+				<li class="style3">
+					<span class="icon fa-signal"></span>
+					<strong>3. Interview</strong> Attend a casual interview with 1 or 2 existing members
+				</li>
+				<li class="style4">
+					<span class="icon fa-laptop"></span>
+					<strong>4. Background</strong> Pass the University of Michigan's background check
+				</li>
+				
+			</ul>
+			<p>
+				You can join anytime, but you can only start teaching if we are less than 2 trips into the 
+				semester, and you have finished the sign-up process.
+			</p>
+		</section>
+
+	<!-- Get Started -->
+		<section id="join" class="main special">
+			<header class="major">
+				<h2>Let's go!</h2>
+				<p>
+					If you have any questions, feel free to email us! If you don't have the time/availabilty to be a teacher,
+					but you still want to join, you can check out
+					joining another one of our teams. Take a look <a href="">here</a>!
+				</p>
+			</header>
+			<footer class="major">
+				<ul class="actions">
+					<li><a href="" class="button special">Get Started</a></li>
+					<li><a href="" class="button">Email us</a></li>
+				</ul>
+			</footer>
+		</section>
+
+</div>
+{% endblock %}
