@@ -20,9 +20,9 @@
 			<div id="wrapper">
 
 				<!-- Header -->
-					<header id="header" class="alt">
+					<header id="header" class="alt" style="padding-top:4em;padding-bottom:2em">
 						<span class="logo"><img src="{{ url_for('static', filename='images/logo.svg') }}" alt="" /></span>
-						<h1>Teach</h1>
+						<h1>Teach 7MC</h1>
 						<p>Seven Mile Coding teaching resources</p>
 						
 						<ul class="actions">
@@ -40,9 +40,9 @@
 					<nav id="nav">
 						<ul>
 							<li><a href="#intro" class="active">Become a teacher</a></li>
-							<li><a href="#first">Requirments</a></li>
-							<li><a href="#second">Process</a></li>
-							<li><a href="#cta">Get Started</a></li>
+							<li><a href="#reqs">Requirements</a></li>
+							<li><a href="#steps">Steps</a></li>
+							<li><a href="#join">Get Started</a></li>
 						</ul>
 					</nav>
 
@@ -66,89 +66,129 @@
 							</section>
 
 						<!-- First Section -->
-							<section id="first" class="main special">
+							<section id="reqs" class="main special">
 								<header class="major">
 									<h2>Teacher Requirements</h2>
 								</header>
-								<ul class="features">
-									<li>
-										<span class="icon major style1 fa-code"></span>
+								
+								<!-- i know i know, ill fix later -->
+								<style>
+									.gross { text-align: left;}
+									.gross span { margin-right: 2em !important; margin-bottom: 0 !important;}
+									.gross ul {margin-left: 2em;}
+								</style>
+
+								<div class="spotlight gross">
+									<span class="icon major style1 fa-copy"></span>
+									<div class="content">
+										<h3>Programming Knowledge</h3>
+										<p>
+											You must know the basic principles of programming. Taking U of M's EECS 183 should provide you with sufficient knowledge
+											to teach new students.
+											We focus on teaching Python 3, so if you do not know it, you will need to learn it before starting teaching. Check out our
+											Python 3 resources <a href="">here</a>.
+										</p>
+									</div>
+								</div>
+								<br/>
+
+								<div class="spotlight gross">
+									<span class="icon major style1 fa-copy"></span>
+									<div class="content">
 										<h3>Availablity</h3>
 										<p>
-											You must be available during our weekly lessons. See the teacher calendar <a href="">here</a> for specific times.
+											You must be available during our weekly lessons. See the teacher 
+											calendar <a href="">here</a> for specific times.
 										</p>
 										<ul>
-											<li>
-												
-											</li>
+											<li>You are only allowed to miss two lessons. This is because of our focus on one-on-one teaching</li>
+											<li>Give us notice of absence at least one week in advance, so we can make accommodations for your student</li>
+											<li>If you miss more than 2 lessons then you will no longer be able to teach</li>
 										</ul>
-									</li>
-									<li>
-										<span class="icon major style3 fa-copy"></span>
-										<h3>Amed sed feugiat</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-									</li>
-									<li>
-										<span class="icon major style5 fa-diamond"></span>
-										<h3>Dolor nullam</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-									</li>
-								</ul>
+									</div>
+								</div>
+								<br/>
+								
+								<div class="spotlight gross">
+									<span class="icon major style5 fa-copy"></span>
+									<div class="content">
+										<h3>25% Time</h3>
+										<p>
+											You should expect to put in 4 or more hours per week, 3 of which are for the weekly trip.
+											Teachers must spend at least an hour outside of trips working on other 7MC work/projects.
+											This can include:
+										</p>
+										<ul>
+											<li>Developing lessons and 10 minutes of code</li>
+											<li>Working on the website</li>
+											<li>Fundraising</li>
+										</ul>
+									</div>
+								</div>
+								<br/>
+								<div class="spotlight gross">
+									<span class="icon major style3 fa-copy"></span>
+									<div class="content">
+										<h3>Develop a 10 Minutes of Code lesson</h3>
+										<p>
+											Each teacher must make a 10 Minutes of Code lesson (10moc). 
+											For our first lesson of each semester, students get to rotate between different 10mocs,
+											getting a chance to see different areas of computer science, and how easy coding can be.		
+										</p>
+									</div>
+								</div>
+										
+
 								<footer class="major">
 									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn More</a></li>
+										<li><a href="{{ url_for('info.program_route')}}" target="_blank" class="button">
+											Learn more about our style</a></li>
 									</ul>
 								</footer>
 							</section>
 
 						<!-- Second Section -->
-							<section id="second" class="main special">
+							<section id="steps" class="main special">
 								<header class="major">
 									<h2>Join</h2>
-									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
+									<p>Do you meet the requirements above? Complete the steps below and join the team!</p>
 								</header>
 								<ul class="statistics">
 									<li class="style1">
 										<span class="icon fa-code-fork"></span>
-										<strong>5,120</strong> Etiam
+										<strong>1. Contact us</strong> <a href="">Fill out the sign-up form</a>
 									</li>
 									<li class="style2">
 										<span class="icon fa-folder-open-o"></span>
-										<strong>8,192</strong> Magna
+										<strong>2. 10moc</strong> Submit your proposal for a 10 Minutes of Code
+										<br/><a href="">Look at the spec here</a>
 									</li>
 									<li class="style3">
 										<span class="icon fa-signal"></span>
-										<strong>2,048</strong> Tempus
+										<strong>3. Interview</strong> Attend a casual interview with 1 or 2 existing members
 									</li>
 									<li class="style4">
 										<span class="icon fa-laptop"></span>
-										<strong>4,096</strong> Aliquam
+										<strong>4. Background</strong> Pass the University of Michigan's background check
 									</li>
-									<li class="style5">
-										<span class="icon fa-diamond"></span>
-										<strong>1,024</strong> Nullam
-									</li>
+									
 								</ul>
-								<p class="content">Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.</p>
-								<footer class="major">
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul>
-								</footer>
 							</section>
 
 						<!-- Get Started -->
-							<section id="cta" class="main special">
+							<section id="join" class="main special">
 								<header class="major">
-									<h2>Congue imperdiet</h2>
-									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
+									<h2>Let's go!</h2>
+									<p>
+										If you have any questions, feel free to email us! If you don't have the time/availabilty to be a teacher,
+										but you still want to join, you can check out
+										joining another one of our teams. Take a look <a href="">here</a>!
+									</p>
 								</header>
 								<footer class="major">
 									<ul class="actions">
-										<li><a href="generic.html" class="button special">Get Started</a></li>
-										<li><a href="generic.html" class="button">Learn More</a></li>
+										<li><a href="" class="button special">Get Started</a></li>
+										<li><a href="" class="button">Email us</a></li>
 									</ul>
 								</footer>
 							</section>
