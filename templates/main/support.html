@@ -5,35 +5,54 @@
 <!-- Main -->
 <section id="main" class="wrapper">
 	<div class="inner">
-		<h1 class="major">Support Seven Mile Coding</h1>						
+		<h1 class="major">Support Seven Mile Coding</h1>
+		
 		<p>
-			This is our first semester of Seven Mile Coding, so your support is especially 
-			needed so we can make this program a success. We appreciate any contribution.
+			Our general costs consist of transportation (getting Umich students to Detroit), and
+			equipment the students use. Since students get to keep projects they make, like robots,
+			we need to keep up our stock.
+		</p>
+		
+		<h2>Equipment needed</h2>
+		<p>
+			Visit our Amazon Wishlist to directly supply our students with equipment.
+			This semester we are making robots!
+		</p>
+		<a href="http://a.co/hlwLhod" target="_blank" class="button">Amazon Wishlist</a>
+		<br/><br/>
+
+		<a name="donate"></a>
+		<h2>Donations</h2>
+		<p>
+			If you would like to help support Seven Mile Coding with a financial contribution, see the options below.
+			For other donation methods, email us at <a href="mailto:{{ email }}">{{ email }}</a>. We will send you a reciept
+			after we recieve your donation.
 		</p>
 
-		<h2>Fundraising Goals</h2>
-		<br>
-		<h1 style="text-align:center; color:#b74e91">$10,000</h1>
-		<hr></hr>
-		We are trying to raise $10,000 for the Fall semester of 2017. This covers the cost for
-		tech equipment that will last multiple semesters, as well as transportation for the teachers
-		commuting between Ann Arbor and Brightmoor.
-		<br><br>
-		<a name="donate"></a>
-		<h2>Donate</h2>
+		<a href="https://causes.benevity.org/projects/113477" class="button">Benevity</a>
+		<br/><br/>
 		<p>
-			If you would like to help support Seven Mile Coding, here are some options. Please make sure
-			to indicate your donation is for Seven Mile Coding in any appropriate field (such as comments).
-			For other donation methods, email us at <a href="mailto:umsevenmilecoding@gmail.com">umsevenmilecoding@gmail.com</a>.
+			If your employer uses Benevity for donation matching, please search for Seven Mile Coding
+			on your company's Benevity site (ex. <a href="https://apple.benevity.org/cause/840-475343430">apple.benevity.org</a>) 
+			to take advantage of the matching.
 		</p>
-		<a href="https://causes.benevity.org/projects/113477" class="button">Benevity</a><br/><br/>
-		<a href="https://venmo.com/umsevenmilecoding" class="button">Venmo @umsevenmilecoding</a><br/><br/>
-		<p>If your employer uses Benevity for donation matching, please search for Seven Mile Coding
-			on your company's Benevity site (ex. <a href="https://apple.benevity.org/cause/840-475343430">apple.benevity.org</a>) to take advantage of the matching.</p>
-		<br>
+
+		<a href="https://venmo.com/umsevenmilecoding" class="button">Venmo @umsevenmilecoding</a>
+		<br/><br/>
+
+		<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BQYKUVQNQNZ3J" class="button">PayPal</a>
+		<br/><br/>
+		<p>
+			Please indicate that you are donating to Seven Mile Coding, if necessary, in any relevant field (such as comments) or by email. 
+			Otherwise, we might consider your donation to be for the whole of Seven Mile. If you do want to donate to Seven Mile as 
+			a whole, please visit <a href="">sevenmilelink</a>
+		</p>
+		<br/>
+
+
 		<a name="costs"></a>
-		<h2>Breakdown (2017 Fall Semester)</h2>
-		<br>
+		<h2>Breakdown of Semesterly Costs</h2>
+		<br/>
 		<table>
 			<thead>
 				<tr>
@@ -45,43 +64,43 @@
 				</tr>
 			</thead>
 			<tbody>
+				{% set costs = [
+						{
+							'cat': 'Laptops',
+							'desc': '4+gb of RAM, 128+gb storage',
+							'q': 20,
+							'price': 270
+						},
+						{
+							'cat': 'Transportation',
+							'desc': 'Weekly Zipcar rentals (~3 cars per trip)',
+							'q': 3*12,
+							'price': 35
+						},
+						{
+							'cat': 'Misc',
+							'desc': 'Replacements, extension cords, chargers, flash drives, etc',
+							'q': 1,
+							'price': 500
+						}
+					]
+				%}
+				{% for i in costs %}
 				<tr>
-					<td>Laptops</td>
-					<td>Windows 10 with at least 4gb of RAM</td>
-					<td>x30</td>
-					<td>$270</td>
-					<td>$8100</td>
+					<td>{{ i['cat'] }}</td>
+					<td>{{ i['desc'] }}</td>
+					<td>x{{ i['q'] }}</td>
+					<td>${{ i['price'] }}</td>
+					<td>${{ i['q'] * i['price'] }}</td>
 				</tr>
-				<tr>
-					<td>Minivan</td>
-					<td><a href="https://ltp.umich.edu/fleet/rentals.php">Rental from Umich</a> once a week for commuting</td>
-					<td>x26 (13 weeks * 2 vans/trip)</td>
-					<td>$63</td>
-					<td>$1638</td>
-				</tr>
-				<tr>
-					<td>Web Hosting</td>
-					<td>$5/month hosting and $1/month domain</td>
-					<td>x12</td>
-					<td>$6</td>
-					<td>$72</td>
-				</tr>
-				<tr>
-					<td>Misc</td>
-					<td>Extension cords, chargers, flash drives</td>
-					<td>N/A</td>
-					<td>N/A</td>
-					<td>$190</td>
-				</tr>
+				{% endfor %}
+
 			</tbody>
 		</table>
 		<p>
-			Some of these prices are variable, so if prices drop, extra donations will propogate to future semester expenses.
-			
 			Seven Mile Coding cares about your donations. If you want to confirm your donation has been
 			spent appropriatley, email us at <a href="mailto:{{email}}">{{email}}</a>.
 		</p>
-		
 		
 	</div>
 </section>
