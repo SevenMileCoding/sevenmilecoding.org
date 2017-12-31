@@ -26,3 +26,8 @@ def schedule_route():
 		args = request.args
 	
 	return render_template('teach/schedule.html', **data)
+
+
+@teach.route('/resources')
+def resources_route():
+	return render_template('teach/resources.html')

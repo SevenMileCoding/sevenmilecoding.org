@@ -26,4 +26,4 @@ def calendar_route():
 	if request.method == 'GET' and request.args:
 		args = request.args
 
-	return render_template('learn/index.html')
+	return render_template('learn/calendar.html')
