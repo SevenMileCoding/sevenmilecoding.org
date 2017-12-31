@@ -16,3 +16,14 @@ def main_route():
 		args = request.args
 
 	return render_template('learn/index.html')
+
+
+@learn.route('/calendar')
+def calendar_route():
+
+	data = {}
+
+	if request.method == 'GET' and request.args:
+		args = request.args
+
+	return render_template('learn/index.html')
