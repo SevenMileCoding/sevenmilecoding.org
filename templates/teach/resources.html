@@ -6,6 +6,7 @@
 	<ul>
 		<li><a href="#intro" class="active">This week</a></li>
 		<li><a href="#py">Python Tutorials</a></li>
+		<li><a href="#classroom">Classroom</a></li>
 	</ul>
 </nav>
 
@@ -28,12 +29,47 @@
 		</section>
 
 	<!-- First Section -->
-		<section id="cal" class="main special">
+		<section id="py" class="main special">
 			<header class="major">
-				<h2>Calendar</h2>
+				<h2>Python Tutorials</h2>
 			</header>
-			<iframe src="https://calendar.google.com/calendar/embed?src=umsevenmilecoding%40gmail.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
+			<h4>
+				<a href="https://drive.google.com/a/umich.edu/file/d/0BzaVE6boc4-RY2hIcGVZSWFUVDQ/view?usp=sharing">
+					Overview for programmers
+				</a>
+			</h4>
+			<p>
+				This is a great overview of Python, for those who have experience programming. Written by Amir Kamil.
+				This will probably be the quickest and most comprehensive guide. If you only look at one of these, look at this one.
+			</p>
+
+			<h4><a href="https://www.tutorialspoint.com/python3/">TutorialsPoint</a></h4>
+			<p>A step-by-step guide to the basic of Python</p>
+			
+			<h4><a href="https://hourofpython.trinket.io/a-visual-introduction-to-python#/turtles/meet-tina">Trinket.io</a></h4>
+			<p>Trinket is a great website to just start messing with Python.</p>
+			{% set trinketLinks = [
+					'https://trinket.io/features/python3',
+					'https://trinket.io/python/7c2ed24a1d',
+					'https://trinket.io/python/cc436dea14',
+					'https://trinket.io/python/5e8d265a25'
+				]
+			%}
+			<ul>
+				{% for l in trinketLinks %}
+				<li><a href="{{ l }}">{{ l }}</a></li>
+				{% endfor %}
+			</ul>
+		</section>
+
+
+		<section id="classroom" class="main">
+			<header class="major">
+				<h2>Stuff</h2>
+			</header>
+			<h3><a>Piazza</a></h3>
+			<h3><a>Piazza</a></h3>
 		</section>
 
 </div>
