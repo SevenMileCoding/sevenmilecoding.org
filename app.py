@@ -9,6 +9,14 @@ import blueprints
 import config
 import sys
 import os
+import argparse
+
+
+parser = argparse.ArgumentParser()
+parser.add_argument('-d', '--development', 
+					action='store_true', # act like a flag
+                    help='a flag for indicating the app will run for local development')
+args = parser.parse_args()
 
 STATIC_PATH = config.STATIC_PATH
 
@@ -23,8 +31,11 @@ app.register_blueprint(blueprints.learn.learn, subdomain='learn')
 app.register_blueprint(blueprints.teach.teach, subdomain='teach')
 
 
-if len(sys.argv) > 1:
-	app.config['SERVER_NAME'] = '7mc:' + str(config.env['port']) # so subdomains work on local machine
+# Subdomain setup
+serverName = 'sevenmilecoding.org'
+if args.development:
+	serverName = '7mc:' + str(config.env['port']) # so subdomains work on local machine
+app.config['SERVER_NAME'] = serverName
 
 # add global variables to jinja templates
 @app.context_processor
@@ -38,7 +49,7 @@ def inject_globals():
 # Listen on external IPs
 if __name__ == '__main__':
 	# listen on external IPs
-	if len(sys.argv) > 1: # only arguments will be pased to development
+	if args.development: # only arguments will be pased to development
 		app.run(host=config.env['host'], port=config.env['port'], debug=True)
 	else:
 		app.run()
