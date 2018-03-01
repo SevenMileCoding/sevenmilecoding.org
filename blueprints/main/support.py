@@ -7,7 +7,7 @@ import datetime
 
 support = Blueprint('support', __name__)
 
-@support.route('/support', methods=['GET', 'POST'], subdomain='www')
+
 @support.route('/support', methods=['GET', 'POST'])
 def main_route():
 	data = {}

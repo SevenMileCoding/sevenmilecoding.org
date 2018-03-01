@@ -7,7 +7,6 @@ import datetime
 home = Blueprint('home', __name__)
 
 
-@home.route('/', methods=['GET', 'POST'], subdomain='www')
 @home.route('/', methods=['GET', 'POST'])
 def main_route():
 
