@@ -11,7 +11,7 @@
 			Our general costs consist of transportation (getting Umich students to Detroit), and
 			equipment the students use. Since students get to keep projects they make, like robots,
 			we need to keep up our stock.
-		</p>
+		</p><br/><br/>
 		
 		<h2>Equipment needed</h2>
 		<p>
@@ -19,7 +19,7 @@
 			This semester we are making robots!
 		</p>
 		<a href="http://a.co/hlwLhod" target="_blank" class="button">Amazon Wishlist</a>
-		<br/><br/>
+		<br/><br/><br/><br/>
 
 		<a name="donate"></a>
 		<h2>Donations</h2>
@@ -47,56 +47,14 @@
 			Otherwise, we might consider your donation to be for the whole of Seven Mile. If you do want to donate to Seven Mile as 
 			a whole, please visit <a href="">sevenmilelink</a>
 		</p>
-		<br/>
+		<br/><br/><br/>
 
 
 		<a name="costs"></a>
 		<h2>Breakdown of Semesterly Costs</h2>
-		<br/>
-		<table>
-			<thead>
-				<tr>
-					<th>Category</th>
-					<th>Description</th>
-					<th>Quantity</th>
-					<th>Price</th>
-					<th>Total</th>
-				</tr>
-			</thead>
-			<tbody>
-				{% set costs = [
-						{
-							'cat': 'Laptops',
-							'desc': '4+gb of RAM, 128+gb storage',
-							'q': 20,
-							'price': 270
-						},
-						{
-							'cat': 'Transportation',
-							'desc': 'Weekly Zipcar rentals (~3 cars per trip)',
-							'q': 3*12,
-							'price': 35
-						},
-						{
-							'cat': 'Misc',
-							'desc': 'Replacements, extension cords, chargers, flash drives, etc',
-							'q': 1,
-							'price': 500
-						}
-					]
-				%}
-				{% for i in costs %}
-				<tr>
-					<td>{{ i['cat'] }}</td>
-					<td>{{ i['desc'] }}</td>
-					<td>x{{ i['q'] }}</td>
-					<td>${{ i['price'] }}</td>
-					<td>${{ i['q'] * i['price'] }}</td>
-				</tr>
-				{% endfor %}
-
-			</tbody>
-		</table>
+		<p>Check out 
+			<a target="_blank" href="https://docs.google.com/spreadsheets/d/17IgS3fFPtZRjei8LJyR_TAqrMpKePLef8CcqWI_Ko4Y/edit?usp=sharing">our budget</a> 
+			to see the most up to date breakdown of our costs</p>
 		<p>
 			Seven Mile Coding cares about your donations. If you want to confirm your donation has been
 			spent appropriatley, email us at <a href="mailto:{{email}}">{{email}}</a>.
