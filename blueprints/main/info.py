@@ -16,6 +16,7 @@ with open('static/database/members.json') as jd:
 
 
 @info.route('/program', methods=['GET', 'POST'])
+@info.route('/program', methods=['GET', 'POST'], subdomain='www')
 def program_route():
 
 	data = {}
@@ -30,6 +31,7 @@ def program_route():
 
 
 @info.route('/team', methods=['GET', 'POST'])
+@info.route('/team', methods=['GET', 'POST'], subdomain='www')
 def members_route():
 
 	data = {
