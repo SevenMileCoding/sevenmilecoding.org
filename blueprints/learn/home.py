@@ -27,3 +27,37 @@ def calendar_route():
 		args = request.args
 
 	return render_template('learn/calendar.html')
+
+
+
+@learn.route('/tutorials')
+def tutorials_route():
+
+	data = {}
+
+	if request.method == 'GET' and request.args:
+		args = request.args
+
+	return render_template('learn/tutorials.html')
+
+
+@learn.route('/activities')
+def activities_route():
+
+	data = {}
+
+	if request.method == 'GET' and request.args:
+		args = request.args
+
+	return render_template('learn/activities.html')
+
+
+@learn.route('/resources')
+def resources_route():
+
+	data = {}
+
+	if request.method == 'GET' and request.args:
+		args = request.args
+
+	return render_template('learn/resources.html')

@@ -33,5 +33,6 @@ FILE_PATHS = {
 
 GLOBAL_JINJA = {
 	'email': 'umsevenmilecoding@gmail.com',
-	'github': 'https://github.com/SevenMileCoding'
+	'github': 'https://github.com/SevenMileCoding',
+	'phone': '(734) 531-9025'
 }
