@@ -53,18 +53,18 @@
 		{% if sidebarNav %}
 		<section id="sidebar">
 			<div class="inner">
-				{{ navMenu }}
+				{{ navMenu|safe }}
 			</div>
 		</section>
 		{% elif headerNav %}
 		<header id="header">
 			<a href="{{ main_urls.home }}" class="title">7MC</a>
-			{{ navMenu }}
+			{{ navMenu|safe }}
 		</header>
 		{% elif indexSidebar %}
 		<section id="sidebar">
 			<div class="inner">
-				{{ homeSidebar }}
+				{{ homeSidebar|safe }}
 			</div>
 		</section>
 		{% endif %}
