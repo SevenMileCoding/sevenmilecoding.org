@@ -2,7 +2,7 @@
 {% extends "main/base.html" %}
 {% block title %}Members - Seven Mile Coding{% endblock %}
 {% block css %}
-<link rel="stylesheet" href="{{ url_for('static', filename='css/members.css') }}" />
+<link rel="stylesheet" href="{{ url_for('static', filename='css/hyperspace/members.css') }}" />
 {% endblock %}
 {% block content %}
 {% set board =
@@ -45,7 +45,8 @@
 			'class': 'Senior in Computer Science BSE',
 			'genI': 'drawing, playing volleyball, running, teaching',
 			'csI': 'making programs think like humans, making programs that play games',
-			'ask': 'people always mispronouncing my name, being super tall, and programming a sudoku solver'
+			'ask': 'people always mispronouncing my name, being super tall, and programming a sudoku solver',
+			'active': False
 		},
 		{ 
 			'name': 'Shreedhar Deshpande',
@@ -54,18 +55,56 @@
 			'class': 'Junior in Computer Science BSE',
 			'genI': 'Huge sports fan, drummer, hip hop fan, food lover',
 			'csI': 'Backend programming, databases, data structures',
-			'ask': 'Isaiah Thomas, Kanye West, coding without any experience, Boston'
+			'ask': 'Isaiah Thomas, Kanye West, coding without any experience, Boston',
+			'active': True
 		},
 		{ 
 			'name': 'Jonathan Hamermesh',
 			'position': 'Teacher',
+			'sub': 'Incoming Curriculum Director',
 			'img': 'images/jonathan.jpg',
 			'class': 'Junior in Computer Engineering BSE',
 			'genI': '',
 			'csI': '',
-			'ask': 'Playing a string instrument, listening to classical music and Broadway shows, or the keyboard that I built (and use) and other ways to interact between the physical world and computers.'
-		} 
-
+			'ask': 'Playing a string instrument, listening to classical music and Broadway shows, or the keyboard that I built (and use) and other ways to interact between the physical world and computers.',
+			'active': True
+		},
+		{
+			'name': 'Ben Li',
+			'position': 'Teacher',
+			'img': 'images/ben.jpg',
+			'class': 'Senior in Computer Science BSE',
+			'genI': 'Tennis, running, reading, backpacking',
+			'ask': 'Racecars',
+			'active': True
+		},
+		{
+			'name': 'Colin Page',
+			'position': 'Teacher',
+			'img': 'images/pic05.jpg',
+			'class': 'Junior in Computer Science BSE',
+			'genI': 'Tennis, Basketball, Computer Gaming, Music, visual art',
+			'ask': 'Any basketball team, aliens and other fun conspiracy theories, really anything (I love to talk)',
+			'active': True
+		},
+		{
+			'name': 'Junius Murphy',
+			'position': 'Teacher',
+			'img': 'images/pic02.jpg',
+			'class': 'Junior in Computer Science BS',
+			'genI': 'Reading, Producing Beats, Coding, and watching Youtube Videos',
+			'ask': 'Where I got my name, Why my nieces and nephews are older than me, and why I love coding',
+			'active': True
+		},
+		{
+			'name': 'Madeline Endres',
+			'position': 'Teacher',
+			'img': 'images/pic06.jpg',
+			'class': 'Senior in Computer Science BSE',
+			'genI': 'Playing cello, reading, hiking, watching movies, traveling',
+			'ask': 'Growing up in Alaska, studying two degrees in college, corgis',
+			'active': True
+		}
 	]
 %}
 
@@ -78,6 +117,9 @@
 		<div class="content">
 			<div class="inner">
 				<h2>{{ p['name'] }} - {{ p['position'] }}</h2>
+				{% if 'sub' in p %}
+				<h3>{{p['sub']}}</h3>
+				{% endif %}
 				<p><b>Class:</b> {{ p['class'] }}</p>
 				<p><b>Interests:</b> {{ p['genI'] }}</p>
 				<!-- <p><b>CS Interests:</b> {{ p['csI'] }}</p> -->
