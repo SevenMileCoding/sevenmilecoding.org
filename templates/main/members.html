@@ -14,7 +14,8 @@
 			'class': 'Senior in Computer Science BSE',
 			'genI': 'Animation, movies, digital art, guitar, technology, photography',
 			'csI': 'User interfaces, tools, web apps',
-			'ask': 'Batman, making popsicle stick sculptures, movies'
+			'ask': 'Batman, making popsicle stick sculptures, movies',
+			'active': True
 		},
 		{ 
 			'name': 'Ritam Mehta',
@@ -23,7 +24,8 @@
 			'class': 'Senior in Computer Science BS',
 			'genI': 'Comedy, News & Politics, Hip Hop, Space Jam, Reading',
 			'csI': 'Intersection with the media, Frontend programming, CS as Journalism',
-			'ask': 'Being Funny, faking it till you make it, coding fun projects, NYC'
+			'ask': 'Being Funny, faking it till you make it, coding fun projects, NYC',
+			'active': True
 		},
 		{ 
 			'name': 'Tara Safavi',
@@ -32,7 +34,8 @@
 			'class': 'First year PhD in Computer Science',
 			'genI': 'Discovering new music, outdoor activities like hiking and camping, politics/world news',
 			'csI': '',
-			'ask': ''
+			'ask': '',
+			'active': True
 		}
 	]
 %}
@@ -109,7 +112,7 @@
 %}
 
 {% macro genMembers(people) -%}
-	{% for p in people %}
+	{% for p in people if p['active'] %}
 	<section>
 		<a class="image" data-position="center center">
 			<img src="{{ url_for('static', filename=p['img']) }}"/> 
