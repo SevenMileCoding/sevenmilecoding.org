@@ -14,9 +14,8 @@ membersData = None
 with open('static/database/members.json') as jd:
     membersData = json.load(jd)
 
-
-@info.route('/program', methods=['GET', 'POST'])
 @info.route('/program', methods=['GET', 'POST'], subdomain='www')
+@info.route('/program', methods=['GET', 'POST'])
 def program_route():
 
 	data = {}
@@ -29,9 +28,8 @@ def program_route():
 
 
 
-
-@info.route('/team', methods=['GET', 'POST'])
 @info.route('/team', methods=['GET', 'POST'], subdomain='www')
+@info.route('/team', methods=['GET', 'POST'])
 def members_route():
 
 	data = {

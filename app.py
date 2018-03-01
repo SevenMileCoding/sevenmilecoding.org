@@ -23,7 +23,8 @@ app.register_blueprint(blueprints.learn.learn, subdomain='learn')
 app.register_blueprint(blueprints.teach.teach, subdomain='teach')
 
 
-app.config['SERVER_NAME'] = '7mc:' + str(config.env['port']) # so subdomains work
+if len(sys.argv) > 1:
+	app.config['SERVER_NAME'] = '7mc:' + str(config.env['port']) # so subdomains work on local machine
 
 # add global variables to jinja templates
 @app.context_processor
