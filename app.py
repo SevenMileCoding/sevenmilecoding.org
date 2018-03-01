@@ -42,9 +42,9 @@ app.config['SERVER_NAME'] = serverName
 def inject_globals():
 	return dict(**config.GLOBAL_JINJA)
 
-# @app.errorhandler(404)
-# def page_not_found(e):
-#     return render_template('404.html')
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('main/404.html')
 
 # Listen on external IPs
 if __name__ == '__main__':
