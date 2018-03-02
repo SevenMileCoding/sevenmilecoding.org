@@ -66,6 +66,15 @@
 			"active": true
 		},
 		{
+			"name": "Madeline Endres",
+			"position": "Teacher",
+			"img": "images/maddy.jpg",
+			"class": "Senior in Computer Science BSE",
+			"genI": "Playing cello, reading, hiking, watching movies, traveling",
+			"ask": "Growing up in Alaska, studying two degrees in college, corgis",
+			"active": true
+		},
+		{
 			"name": "Ben Li",
 			"position": "Teacher",
 			"img": "images/ben.jpg",
@@ -75,30 +84,30 @@
 			"active": true
 		},
 		{
-			"name": "Colin Page",
-			"position": "Teacher",
-			"img": "images/pic05.jpg",
-			"class": "Junior in Computer Science BSE",
-			"genI": "Tennis, Basketball, Computer Gaming, Music, visual art",
-			"ask": "Any basketball team, aliens and other fun conspiracy theories, really anything (I love to talk)",
-			"active": true
-		},
-		{
 			"name": "Junius Murphy",
 			"position": "Teacher",
-			"img": "images/pic02.jpg",
+			"img": "images/junius.jpg",
 			"class": "Junior in Computer Science BS",
 			"genI": "Reading, Producing Beats, Coding, and watching Youtube Videos",
 			"ask": "Where I got my name, Why my nieces and nephews are older than me, and why I love coding",
 			"active": true
 		},
 		{
-			"name": "Madeline Endres",
+			"name": "Mihir Bala",
 			"position": "Teacher",
-			"img": "images/pic06.jpg",
-			"class": "Senior in Computer Science BSE",
-			"genI": "Playing cello, reading, hiking, watching movies, traveling",
-			"ask": "Growing up in Alaska, studying two degrees in college, corgis",
+			"img": "images/mihir.jpg",
+			"class": "Sophmore in Computer Science BSE",
+			"genI": "Piano, world cuisine, travel, wildlife, film",
+			"ask": "Making my own movie",
+			"active": true
+		},
+		{
+			"name": "Colin Page",
+			"position": "Teacher",
+			"img": "images/pic05.jpg",
+			"class": "Junior in Computer Science BSE",
+			"genI": "Tennis, Basketball, Computer Gaming, Music, visual art",
+			"ask": "Any basketball team, aliens and other fun conspiracy theories, really anything (I love to talk)",
 			"active": true
 		}
 	]
