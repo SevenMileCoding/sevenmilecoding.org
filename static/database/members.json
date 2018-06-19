@@ -1,6 +1,14 @@
 {
-
 	"board": [
+		{
+			"name": "Junius Murphy",
+			"position": "7MC Co-Chair",
+			"img": "images/junius.jpg",
+			"class": "Junior in Computer Science BS",
+			"genI": "Reading, Producing Beats, Coding, and watching Youtube Videos",
+			"ask": "Where I got my name, Why my nieces and nephews are older than me, and why I love coding",
+			"active": true
+		},
 		{ 
 			"name": "Maverick Cook",
 			"position": "7MC Chair",
@@ -29,6 +37,15 @@
 			"genI": "Discovering new music, outdoor activities like hiking and camping, politics/world news",
 			"csI": "",
 			"ask": "",
+			"active": true
+		},
+		{
+			"name": "Colin Page",
+			"position": "Web Director",
+			"img": "images/colin.jpg",
+			"class": "Junior in Computer Science BSE",
+			"genI": "Tennis, Basketball, Computer Gaming, Music, visual art",
+			"ask": "Any basketball team, aliens and other fun conspiracy theories, really anything (I love to talk)",
 			"active": true
 		}
 	],
@@ -101,14 +118,5 @@
 			"ask": "Making my own movie",
 			"active": true
 		},
-		{
-			"name": "Colin Page",
-			"position": "Teacher",
-			"img": "images/pic05.jpg",
-			"class": "Junior in Computer Science BSE",
-			"genI": "Tennis, Basketball, Computer Gaming, Music, visual art",
-			"ask": "Any basketball team, aliens and other fun conspiracy theories, really anything (I love to talk)",
-			"active": true
-		}
 	]
 }
