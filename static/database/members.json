@@ -4,39 +4,28 @@
 			"name": "Junius Murphy",
 			"position": "7MC Co-Chair",
 			"img": "images/junius.jpg",
-			"class": "Junior in Computer Science BS",
+			"class": "Senior in Computer Science BS",
 			"genI": "Reading, Producing Beats, Coding, and watching Youtube Videos",
 			"ask": "Where I got my name, Why my nieces and nephews are older than me, and why I love coding",
 			"active": true
 		},
-		{ 
-			"name": "Maverick Cook",
-			"position": "7MC Chair",
-			"img": "images/mav.jpg",
-			"class": "Senior in Computer Science BSE",
-			"genI": "Animation, movies, digital art, guitar, technology, photography",
-			"csI": "User interfaces, tools, web apps",
-			"ask": "Batman, making popsicle stick sculptures, movies",
-			"active": true
-		},
-		{ 
-			"name": "Ritam Mehta",
-			"position": "Curriculum Director",
-			"img": "images/ritam.jpg",
+		{
+			"name": "Nathan Baker",
+			"position": "7MC Co-Chair",
+			"img": "",
 			"class": "Senior in Computer Science BS",
-			"genI": "Comedy, News & Politics, Hip Hop, Space Jam, Reading",
-			"csI": "Intersection with the media, Frontend programming, CS as Journalism",
-			"ask": "Being Funny, faking it till you make it, coding fun projects, NYC",
+			"genI": "iOS development, computer security, and computer networking",
+			"ask": "books, NBA, basketball, working out",
 			"active": true
 		},
-		{ 
-			"name": "Tara Safavi",
-			"position": "Teaching Director",
-			"img": "images/tara.jpg",
-			"class": "First year PhD in Computer Science",
-			"genI": "Discovering new music, outdoor activities like hiking and camping, politics/world news",
+				{ 
+			"name": "Jonathan Hamermesh",
+			"position": "Curriculum Director",
+			"img": "images/jonathan.jpg",
+			"class": "Senior in Computer Engineering BSE",
+			"genI": "",
 			"csI": "",
-			"ask": "",
+			"ask": "Playing a string instrument, listening to classical music and Broadway shows, or the keyboard that I built (and use) and other ways to interact between the physical world and computers.",
 			"active": true
 		},
 		{
@@ -47,6 +36,16 @@
 			"genI": "Tennis, Basketball, Computer Gaming, Music, visual art",
 			"ask": "Any basketball team, aliens and other fun conspiracy theories, really anything (I love to talk)",
 			"active": true
+		},
+		{ 
+			"name": "Maverick Cook",
+			"position": "Founder",
+			"img": "images/mav.jpg",
+			"class": "Graduated Computer Science BSE",
+			"genI": "Animation, movies, digital art, guitar, technology, photography",
+			"csI": "User interfaces, tools, web apps",
+			"ask": "Batman, making popsicle stick sculptures, movies",
+			"active": false
 		}
 	],
 	
@@ -71,17 +70,6 @@
 			"ask": "Isaiah Thomas, Kanye West, coding without any experience, Boston",
 			"active": true
 		},
-		{ 
-			"name": "Jonathan Hamermesh",
-			"position": "Teacher",
-			"sub": "Incoming Curriculum Director",
-			"img": "images/jonathan.jpg",
-			"class": "Junior in Computer Engineering BSE",
-			"genI": "",
-			"csI": "",
-			"ask": "Playing a string instrument, listening to classical music and Broadway shows, or the keyboard that I built (and use) and other ways to interact between the physical world and computers.",
-			"active": true
-		},
 		{
 			"name": "Madeline Endres",
 			"position": "Teacher",
@@ -89,7 +77,7 @@
 			"class": "Senior in Computer Science BSE",
 			"genI": "Playing cello, reading, hiking, watching movies, traveling",
 			"ask": "Growing up in Alaska, studying two degrees in college, corgis",
-			"active": true
+			"active": false
 		},
 		{
 			"name": "Ben Li",
@@ -98,16 +86,7 @@
 			"class": "Senior in Neuroscience BS",
 			"genI": "Tennis, running, reading, backpacking",
 			"ask": "Racecars",
-			"active": true
-		},
-		{
-			"name": "Junius Murphy",
-			"position": "Teacher",
-			"img": "images/junius.jpg",
-			"class": "Junior in Computer Science BS",
-			"genI": "Reading, Producing Beats, Coding, and watching Youtube Videos",
-			"ask": "Where I got my name, Why my nieces and nephews are older than me, and why I love coding",
-			"active": true
+			"active": false
 		},
 		{
 			"name": "Mihir Bala",
