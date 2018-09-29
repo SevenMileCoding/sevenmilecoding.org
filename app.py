@@ -27,8 +27,8 @@ app = Flask(__name__, template_folder='templates', static_folder=STATIC_PATH)
 app.register_blueprint(blueprints.main.home)
 app.register_blueprint(blueprints.main.info)
 app.register_blueprint(blueprints.main.support)
-app.register_blueprint(blueprints.learn.learn, subdomain='learn')
-app.register_blueprint(blueprints.teach.teach, subdomain='teach')
+app.register_blueprint(blueprints.learn.home, subdomain='learn')
+app.register_blueprint(blueprints.teach.home, subdomain='teach')
 
 
 # Subdomain setup
