@@ -2,99 +2,49 @@
 	"board": [
 		{
 			"name": "Junius Murphy",
-			"position": "7MC Co-Chair",
-			"img": "images/junius.jpg",
+			"position": "Director",
+			"img": "images/junius-murphy-square.jpg",
 			"class": "Senior in Computer Science BS",
-			"genI": "Reading, Producing Beats, Coding, and watching Youtube Videos",
-			"ask": "Where I got my name, Why my nieces and nephews are older than me, and why I love coding",
+			"genI": "Reading | Creating Music | Coding | Volunteering",
+			"linkedIn":"https://www.linkedin.com/in/juniusmurphy/",
 			"active": true
 		},
 		{
-			"name": "Nathan Baker",
-			"position": "7MC Co-Chair",
-			"img": "images/Nathan.jpg",
-			"class": "Senior in Computer Science BSE",
-			"genI": "iOS development, computer security, and computer networking",
-			"ask": "books, NBA, basketball, working out",
-			"active": true
-		},
-				{ 
 			"name": "Jonathan Hamermesh",
 			"position": "Curriculum Director",
-			"img": "images/jonathan.jpg",
+			"img": "images/jonathan-hamermesh-square.jpg",
 			"class": "Senior in Computer Engineering BSE",
-			"genI": "",
-			"csI": "",
-			"ask": "Playing a string instrument, listening to classical music and Broadway shows, or the keyboard that I built (and use) and other ways to interact between the physical world and computers.",
+			"genI": "Classical Music | Broadway Shows | Physical Computing",
+			"linkedIn":"https://www.linkedin.com/in/jhamermesh/",
 			"active": true
-		},
-		{
-			"name": "Colin Page",
-			"position": "Web Director",
-			"img": "images/colin.jpg",
-			"class": "Junior in Computer Science BSE",
-			"genI": "Tennis, Basketball, Computer Gaming, Music, visual art",
-			"ask": "Any basketball team, aliens and other fun conspiracy theories, really anything (I love to talk)",
-			"active": true
-		},
-		{ 
-			"name": "Maverick Cook",
-			"position": "Founder",
-			"img": "images/mav.jpg",
-			"class": "Graduated Computer Science BSE",
-			"genI": "Animation, movies, digital art, guitar, technology, photography",
-			"csI": "User interfaces, tools, web apps",
-			"ask": "Batman, making popsicle stick sculptures, movies",
-			"active": false
 		}
 	],
 	
 	"members": [
-		{ 
-			"name": "Jule Schatz (Pronounced like you-la shots)",
+		{
+			"name": "Adithya Reddy",
 			"position": "Teacher",
-			"img": "images/jule.jpg",
-			"class": "Senior in Computer Science BSE",
-			"genI": "drawing, playing volleyball, running, teaching",
-			"csI": "making programs think like humans, making programs that play games",
-			"ask": "people always mispronouncing my name, being super tall, and programming a sudoku solver",
-			"active": false
-		},
-		{ 
-			"name": "Shreedhar Deshpande",
-			"position": "Teacher",
-			"img": "images/shree.jpg",
-			"class": "Junior in Computer Science BSE",
-			"genI": "Huge sports fan, drummer, hip hop fan, food lover",
-			"csI": "Backend programming, databases, data structures",
-			"ask": "Isaiah Thomas, Kanye West, coding without any experience, Boston",
+			"img": "images/adithya-reddy-square.jpg",
+			"class": "Graduate in Biomedical Engineering",
+			"genI": "Medical Technology | Ukulele | Exercising",
+			"linkedIn":"https://www.linkedin.com/in/adithya-reddy-0b5152115/",
 			"active": true
 		},
 		{
-			"name": "Madeline Endres",
+			"name": "Andrew Ramacher",
 			"position": "Teacher",
-			"img": "images/maddy.jpg",
-			"class": "Senior in Computer Science BSE",
-			"genI": "Playing cello, reading, hiking, watching movies, traveling",
-			"ask": "Growing up in Alaska, studying two degrees in college, corgis",
-			"active": false
+			"img": "images/andrew-ramacher-square.jpg",
+			"class": "Junior in Computer Science BS",
+			"genI": "Teaching | Coding | Health | Mountains",
+			"active": true
 		},
 		{
-			"name": "Ben Li",
+			"name": "Jason Kathawa",
 			"position": "Teacher",
-			"img": "images/ben.jpg",
-			"class": "Senior in Neuroscience BS",
-			"genI": "Tennis, running, reading, backpacking",
-			"ask": "Racecars",
-			"active": false
-		},
-		{
-			"name": "Mihir Bala",
-			"position": "Teacher",
-			"img": "images/mihir.jpg",
-			"class": "Sophmore in Computer Science BSE",
-			"genI": "Piano, world cuisine, travel, wildlife, film",
-			"ask": "Making my own movie",
+			"img": "images/jason-kathawa-square.jpg",
+			"class": "Sophmore in Computer Science BS & Bachelor of Business Administration",
+			"genI": "Hockey | Hip Hop | Movies | Hiking | Cool Business News",
+			"linkedIn":"https://www.linkedin.com/in/jkathawa/",
 			"active": true
 		}
 	]

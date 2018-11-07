@@ -20,8 +20,13 @@
 				{% endif %}
 				<p><b>Class:</b> {{ p['class'] }}</p>
 				<p><b>Interests:</b> {{ p['genI'] }}</p>
+				{% if 'linkedIn' in p %}
+				<p><b><a href="{{p['linkedIn']}}">LinkedIn</a></b></p>
+				{% endif %}
+				{% if 'personalWebsite' in p %}
+				<p><b><a href="{{p['personalWebsite']}}">Personal Website</a></b></p>
+				{% endif %}
 				<!-- <p><b>CS Interests:</b> {{ p['csI'] }}</p> -->
-				<p><b>Ask me about:</b> {{ p['ask'] }}</p>
 			</div>
 		</div>
 	</section>
